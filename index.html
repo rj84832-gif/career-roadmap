@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1020">
+<title>जीवन करियर रोडमैप | 5 साल से 65 साल तक</title>
+<meta name="description" content="उम्र दर उम्र करियर और जीवन गाइड: पढ़ाई शुरू होने से लेकर 65 साल तक क्या करें, क्या न करें। Creator: Rajan Jha, Madhubani, Delhi.">
+
+<!-- =====================================================
+  ✅ यहाँ अपनी सेटिंग बदलिए (नीचे SCRIPT के शुरू में CONFIG है)
+  - Instagram / YouTube लिंक
+  - विज्ञापन (Ads) और Affiliate लिंक
+===================================================== -->
+
+<style>
+:root{
+  --bg:#0b1020; --card:rgba(255,255,255,.06); --line:rgba(255,255,255,.14);
+  --text:#eef1ff; --muted:#a9b2d6; --accent:#7c5cff; --accent2:#22d3ee; --good:#34d399; --warn:#fbbf24;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans Devanagari","Mukta","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;
+  background-image:radial-gradient(1000px 500px at 10% -10%,rgba(124,92,255,.35),transparent 60%),radial-gradient(900px 500px at 100% 10%,rgba(34,211,238,.25),transparent 60%),radial-gradient(800px 600px at 50% 110%,rgba(52,211,153,.18),transparent 60%);
+  background-attachment:fixed}
+a{color:var(--accent2)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.glass{background:var(--card);border:1px solid var(--line);border-radius:20px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px}
+.brand{font-weight:800;font-size:15px}
+.brand span{color:var(--accent2)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;color:#fff;background:linear-gradient(135deg,var(--accent),#4f8cff);box-shadow:0 6px 20px rgba(124,92,255,.35);transition:.2s;text-decoration:none}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:var(--card);border:1px solid var(--line);box-shadow:none;color:var(--text)}
+.btn.ig{background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af)}
+.btn.yt{background:linear-gradient(135deg,#ff0000,#b30000)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center;padding:36px 0 10px}
+.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.2;font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent2),var(--good));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);margin:12px 0 18px;font-size:16px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.creator{margin-top:16px;display:inline-flex;gap:10px;align-items:center;padding:8px 14px;font-size:14px}
+.creator b{color:var(--accent2)}
+
+/* 3D ring */
+.stage3d{height:300px;perspective:900px;display:flex;align-items:center;justify-content:center;position:relative}
+.ring{position:relative;width:110px;height:140px;transform-style:preserve-3d;animation:spin 28s linear infinite}
+.stage3d:hover .ring{animation-play-state:paused}
+@keyframes spin{from{transform:rotateX(-8deg) rotateY(0)}to{transform:rotateX(-8deg) rotateY(360deg)}}
+.face{position:absolute;inset:0;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;
+  border:1px solid rgba(255,255,255,.3);box-shadow:0 10px 30px rgba(0,0,0,.4);font-weight:700;text-align:center;font-size:12px;color:#fff}
+.face .e{font-size:34px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.4))}
+.face small{font-weight:500;opacity:.9}
+.floor{position:absolute;bottom:14px;width:260px;height:40px;border-radius:50%;background:radial-gradient(rgba(124,92,255,.5),transparent 70%);filter:blur(6px)}
+
+/* sections */
+section{padding:26px 0}
+h2{font-size:clamp(22px,3.5vw,30px);margin-bottom:6px}
+.sub{color:var(--muted);margin-bottom:16px;font-size:15px}
+
+/* age timeline */
+.agebar{padding:14px;overflow-x:auto;display:flex;gap:8px;scroll-snap-type:x proximity}
+.agebar::-webkit-scrollbar{height:6px}.agebar::-webkit-scrollbar-thumb{background:var(--line);border-radius:6px}
+.chip{flex:0 0 auto;scroll-snap-align:center;min-width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:800;cursor:pointer;border:2px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);font-family:inherit;transition:.2s}
+.chip:hover{transform:translateY(-3px) scale(1.08)}
+.chip.on{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:#fff;box-shadow:0 0 0 4px rgba(124,92,255,.3)}
+.bandlabel{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.bl{font-size:12.5px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);cursor:pointer;background:rgba(255,255,255,.04);color:var(--text);font-family:inherit}
+.bl.on{background:var(--accent);border-color:var(--accent)}
+
+/* graph */
+.graphbox{padding:14px}
+.graphbox svg{width:100%;height:auto;display:block;cursor:crosshair;touch-action:manipulation}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+/* panel */
+.panel{padding:20px;margin-top:6px;transform-style:preserve-3d}
+.phead{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.bigage{font-size:56px;font-weight:900;line-height:1;background:linear-gradient(135deg,var(--accent2),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.phead h3{font-size:22px}
+.phead p{color:var(--muted);font-size:14px}
+.agenote{background:rgba(251,191,36,.12);border:1px dashed var(--warn);padding:10px 14px;border-radius:12px;margin:8px 0 14px;font-size:14.5px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px}
+.tab{flex:0 0 auto;padding:9px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);cursor:pointer;font:inherit;font-weight:700;font-size:14px;color:var(--text);transition:.2s}
+.tab.on{background:linear-gradient(135deg,var(--accent),#4f8cff);border-color:transparent}
+.tabbody{animation:fade .35s}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.list{list-style:none;display:grid;gap:10px}
+.list li{padding:12px 14px 12px 40px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid var(--line);position:relative}
+.list li::before{content:"✔";position:absolute;left:13px;top:12px;color:var(--good);font-weight:800}
+.list.bad li::before{content:"✖";color:#f87171}
+.pathpick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.pp{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);font:inherit;font-size:13.5px;cursor:pointer}
+.pp.on{background:var(--good);color:#04241a;font-weight:800;border-color:var(--good)}
+.nav2{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+
+/* stage cards 3D */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;perspective:1000px}
+.scard{padding:16px;cursor:pointer;transition:transform .15s,box-shadow .2s;transform-style:preserve-3d;will-change:transform;position:relative;overflow:hidden}
+.scard:hover{box-shadow:0 20px 40px rgba(0,0,0,.45)}
+.scard .e{font-size:38px;display:block;transform:translateZ(40px)}
+.scard b{display:block;transform:translateZ(25px);margin-top:4px}
+.scard small{color:var(--muted);transform:translateZ(15px);display:block}
+.scard .age{position:absolute;right:12px;top:10px;font-weight:800;font-size:13px;color:var(--accent2)}
+
+/* ads + affiliate */
+.ad{display:grid;place-items:center;text-align:center;min-height:100px;border:1.5px dashed var(--line);border-radius:16px;color:var(--muted);font-size:13px;padding:12px;background:repeating-linear-gradient(45deg,rgba(255,255,255,.02),rgba(255,255,255,.02) 10px,transparent 10px,transparent 20px)}
+.ad.hasad{border:0;background:none;padding:0;min-height:0}
+.aff{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.acard{padding:14px;display:flex;flex-direction:column;gap:8px}
+.acard img,.acard .aimg{width:100%;height:230px;object-fit:cover;border-radius:12px;background:rgba(255,255,255,.06);display:grid;place-items:center;font-size:44px}
+.acard img{background:#fff;object-fit:contain;padding:6px}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px}
+.price b{font-size:22px}
+.price s{color:var(--muted);font-size:14px}
+.price em{font-style:normal;color:#f87171;font-weight:800}
+.price small{flex-basis:100%;color:var(--muted);font-size:11px}
+.acard h4{font-size:15px}.acard p{font-size:13.5px;color:var(--muted);flex:1}
+.tag{font-size:11px;color:var(--warn)}
+.disc{font-size:12px;color:var(--muted);margin-top:8px}
+
+/* footer */
+footer{padding:30px 0 90px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:20px}
+footer .cr{font-size:16px;color:var(--text);font-weight:700}
+.social{display:flex;gap:10px;justify-content:center;margin:12px 0;flex-wrap:wrap}
+
+/* install modal + toast */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;place-items:center;z-index:100;padding:16px}
+.modal.show{display:grid}
+.mbox{max-width:460px;width:100%;padding:22px;background:#141a33}
+.mbox h3{margin-bottom:8px}.mbox ol{margin:8px 0 14px 20px;color:var(--muted);font-size:14.5px}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(80px);background:#111936;border:1px solid var(--line);padding:10px 18px;border-radius:999px;z-index:120;transition:.3s;font-size:14px}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+@media(max-width:820px){.hero{grid-template-columns:1fr}.stage3d{height:250px}.bigage{font-size:44px}}
+@media(prefers-reduced-motion:reduce){.ring{animation:none}*{transition:none!important}}
+@media print{body{background:#fff;color:#000}.top,.stage3d,.agebar,.bandlabel,.cta,.ad,.aff,.nav2,.social,.btn,.tabs,#graphSec,#stagesSec{display:none!important}.glass{background:#fff;border:1px solid #999}.list li{background:#fff;border:1px solid #bbb;color:#000}#printAll{display:block!important}}
+#printAll{display:none}
+
+/* ===== सजावट ===== */
+.progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:200;background:linear-gradient(90deg,var(--accent),var(--accent2),var(--good));box-shadow:0 0 12px var(--accent2)}
+.blob{position:fixed;border-radius:50%;filter:blur(70px);opacity:.35;z-index:-1;pointer-events:none;animation:float 14s ease-in-out infinite}
+.b1{width:320px;height:320px;background:#7c5cff;top:8%;left:-80px}
+.b2{width:280px;height:280px;background:#22d3ee;top:45%;right:-70px;animation-delay:-5s}
+.b3{width:260px;height:260px;background:#34d399;bottom:-60px;left:30%;animation-delay:-9s}
+@keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-40px) scale(1.12)}}
+.badge{display:inline-block;font-size:13px;font-weight:700;padding:5px 14px;border-radius:999px;margin-bottom:12px;background:rgba(124,92,255,.2);border:1px solid var(--accent);color:#cfc6ff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 4px}
+.stat{padding:16px 10px;text-align:center}
+.stat b{display:block;font-size:30px;font-weight:900;background:linear-gradient(135deg,var(--accent2),var(--good));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{padding:18px;text-align:center;position:relative}
+.step .n{width:42px;height:42px;border-radius:50%;margin:0 auto 8px;display:grid;place-items:center;font-weight:900;font-size:18px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 0 6px rgba(124,92,255,.2)}
+.step h4{margin-bottom:4px}.step p{font-size:13.5px;color:var(--muted)}
+.quote{padding:26px 20px;text-align:center;font-size:clamp(17px,3vw,22px);font-weight:700;line-height:1.6;border-left:4px solid var(--accent2);border-right:4px solid var(--accent)}
+.quote small{display:block;margin-top:8px;font-size:13px;font-weight:500;color:var(--muted)}
+.acard{transition:.25s;position:relative;overflow:hidden}
+.acard:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(0,0,0,.45),0 0 0 1px var(--accent)}
+.acard::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);transform:translateX(-120%);transition:.7s;pointer-events:none}
+.acard:hover::after{transform:translateX(120%)}
+.acard .aimg{background:linear-gradient(135deg,rgba(124,92,255,.35),rgba(34,211,238,.25));font-size:64px}
+.embed{display:grid;place-items:center;min-height:150px;overflow:hidden;border-radius:12px;background:#fff}
+.chip.on{animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(124,92,255,.3)}50%{box-shadow:0 0 0 9px rgba(124,92,255,0)}}
+.btn{position:relative;overflow:hidden}
+@media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}}
+@media print{.blob,.progress,.stats,.steps,.quote,.badge{display:none!important}}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<!-- ============ TOP BAR ============ -->
+<header class="top">
+  <div class="wrap">
+    <div class="brand">🧭 Life <span>Career</span> Roadmap</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn alt" id="shareBtn">📤 शेयर</button>
+      <button class="btn" id="installBtn">⬇ इंस्टॉल करें</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div>
+    <span class="badge">✨ फ्री · उम्र दर उम्र गाइड</span>
+    <h1>5 साल से 65 साल तक का <em>करियर और जीवन नक्शा</em></h1>
+    <p>स्कूल की पहली सीढ़ी से रिटायरमेंट तक, हर उम्र पर क्लिक कीजिए और जानिए: <b>इस उम्र में क्या करना चाहिए</b>, अगर आपने ये किया है तो आगे क्या करें, और किन गलतियों से बचें।</p>
+    <div class="cta">
+      <a class="btn" href="#explorer">🚀 अपनी उम्र चुनिए</a>
+      <button class="btn alt" id="dlGraph">🖼 ग्राफ डाउनलोड (PNG)</button>
+      <button class="btn alt" id="dlPdf">📄 रोडमैप PDF/Print</button>
+    </div>
+    <div class="glass creator">✍️ <span>Creator by <b>Rajan Jha</b> · From <b>Madhubani</b> · Live in <b>Delhi</b></span></div>
+  </div>
+  <div class="stage3d" aria-label="3D जीवन चरण">
+    <div class="ring" id="ring"></div>
+    <div class="floor"></div>
+  </div>
+</div>
+
+
+<div class="stats">
+  <div class="glass stat"><b>61</b><span>उम्र के पड़ाव (5 से 65)</span></div>
+  <div class="glass stat"><b>9</b><span>जीवन के चरण</span></div>
+  <div class="glass stat"><b>5</b><span>गाइड टैब हर उम्र के लिए</span></div>
+  <div class="glass stat"><b>100%</b><span>फ्री और आसान</span></div>
+</div>
+
+<!-- ============ EXPLORER ============ -->
+<section id="explorer">
+  <h2>🎯 उम्र चुनिए (5 → 65)</h2>
+  <p class="sub">किसी भी उम्र के गोले पर क्लिक कीजिए या नीचे ग्राफ पर क्लिक कीजिए।</p>
+  <div class="glass agebar" id="agebar" role="tablist"></div>
+  <div class="bandlabel" id="bandlabel"></div>
+
+  <div class="glass panel" id="panel">
+    <div class="phead">
+      <div class="bigage" id="pAge">5</div>
+      <div><h3 id="pTitle"></h3><p id="pSum"></p></div>
+    </div>
+    <div class="agenote" id="pNote" style="display:none"></div>
+    <div class="tabs" id="tabs"></div>
+    <div class="tabbody" id="tabbody"></div>
+    <div class="nav2">
+      <button class="btn alt" id="prev">⬅ पिछली उम्र</button>
+      <button class="btn" id="next">अगली उम्र ➡</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ GRAPH ============ -->
+<section id="graphSec">
+  <h2>📈 जीवन ग्राफ: उम्र के साथ क्या कितना ज़रूरी?</h2>
+  <p class="sub">ग्राफ पर कहीं भी क्लिक कीजिए, ऊपर वाला पैनल उसी उम्र पर खुल जाएगा। (यह सामान्य मार्गदर्शन है, हर व्यक्ति का सफर अलग होता है।)</p>
+  <div class="glass graphbox">
+    <svg id="graph" viewBox="0 0 900 380" role="img" aria-label="उम्र के हिसाब से सीखना, कमाई, बचत और ज़िम्मेदारी का ग्राफ"></svg>
+    <div class="legend" id="legend"></div>
+  </div>
+</section>
+
+<!-- ============ STAGES ============ -->
+<section id="stagesSec">
+  <h2>🧩 सभी जीवन चरण</h2>
+  <p class="sub">कार्ड पर क्लिक कीजिए, उस चरण की पूरी गाइड खुलेगी।</p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section>
+  <h2>🪜 कैसे इस्तेमाल करें</h2>
+  <p class="sub">सिर्फ़ तीन आसान कदम।</p>
+  <div class="steps">
+    <div class="glass step"><div class="n">1</div><h4>उम्र चुनिए</h4><p>ऊपर से अपनी या अपने बच्चे की उम्र पर क्लिक कीजिए।</p></div>
+    <div class="glass step"><div class="n">2</div><h4>टैब खोलिए</h4><p>क्या करें, पैसा, स्किल और क्या न करें, सब अलग-अलग टैब में।</p></div>
+    <div class="glass step"><div class="n">3</div><h4>सेव और शेयर कीजिए</h4><p>ग्राफ डाउनलोड कीजिए, रोडमैप का PDF बनाइए या ऐप की तरह इंस्टॉल कीजिए।</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="glass quote">"सही उम्र में सही कदम उठाइए, हर उम्र में नई शुरुआत मुमकिन है।"<small>— Rajan Jha</small></div>
+</section>
+
+<!-- ============ AFFILIATE ============ -->
+<section>
+  <h2>🛒 आपके काम की चीज़ें</h2>
+  <p class="sub">आपकी उम्र के हिसाब से सुझाव (Affiliate)।</p>
+  <div class="aff" id="aff"></div>
+  <p class="disc">* डिस्क्लोज़र: As an Amazon Associate I earn from qualifying purchases. ये Affiliate लिंक हैं, आपके खरीदने पर हमें छोटा कमीशन मिल सकता है, आपको कोई अतिरिक्त खर्च नहीं होगा।</p>
+</section>
+
+
+<!-- Print only: full roadmap -->
+<div id="printAll"></div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="cr">Creator by Rajan Jha · From Madhubani · Live in Delhi</div>
+    <div class="social">
+      <a class="btn ig" id="igLink" target="_blank" rel="noopener">📸 Instagram</a>
+      <a class="btn yt" id="ytLink" target="_blank" rel="noopener">▶ YouTube</a>
+    </div>
+    <p>यह सामग्री सिर्फ़ सामान्य मार्गदर्शन के लिए है। बड़े फैसलों (निवेश, करियर, सेहत) से पहले विशेषज्ञ से सलाह लें।</p>
+    <p style="margin-top:6px">© <span id="yr"></span> Rajan Jha. सर्वाधिकार सुरक्षित।</p>
+  </div>
+</footer>
+
+<!-- install help modal -->
+<div class="modal" id="modal">
+  <div class="glass mbox">
+    <h3>📲 ऐप की तरह इंस्टॉल करें</h3>
+    <p style="color:var(--muted);font-size:14px">आपके ब्राउज़र में ऑटो-इंस्टॉल नहीं मिला, ऐसे कीजिए:</p>
+    <ol>
+      <li><b>Android (Chrome):</b> ऊपर ⋮ मेन्यू → "Install app" या "Add to Home screen"</li>
+      <li><b>iPhone (Safari):</b> Share बटन → "Add to Home Screen"</li>
+      <li><b>कंप्यूटर (Chrome/Edge):</b> एड्रेस बार में ⊕ / इंस्टॉल आइकन पर क्लिक करें</li>
+    </ol>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn" id="saveHtml">💾 यह पेज फाइल में सेव करें</button>
+      <button class="btn alt" id="closeModal">बंद करें</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================================================
+   ✅ CONFIG: सिर्फ़ यहीं बदलाव करें
+========================================================= */
+const CONFIG = {
+  instagram: "https://www.instagram.com/rajan03jha",
+  youtube:   "https://youtube.com/@rajanjhavlogs",
+  siteUrl:   "",   // ← आपकी वेबसाइट का लिंक (शेयर के लिए), खाली छोड़ेंगे तो मौजूदा पेज लिंक जाएगा
+
+  /* सिर्फ़ Affiliate कार्ड (विज्ञापन हटा दिए गए हैं)
+     हर कार्ड: title = नाम, desc = छोटा विवरण, url = आपका Affiliate लिंक,
+     img = फोटो का लिंक या फाइल नाम (जैसे "photos/course.jpg"), btn = बटन का टेक्स्ट,
+     embed = (ऑप्शनल) Amazon SiteStripe का "Text + Image" कोड पेस्ट करें, तब फोटो और कीमत Amazon से अपने आप आएगी,
+     emoji = फोटो न होने पर दिखने वाला निशान,
+     bands = किन चरणों (1 से 9) में दिखाना है, खाली [] = सभी उम्र में */
+  affiliates: [
+    {title:"Nike स्पोर्ट्स शूज़", desc:"खेलकूद, दौड़ और रोज़ की फिटनेस के लिए आरामदायक स्पोर्ट्स शूज़।", url:"https://link.amazon/B0eOk5uFo", emoji:"👟", embed:"", img:"nike-shoe.jpg", price:"₹4,196", mrp:"₹5,995", off:"-30%", btn:"Amazon पर देखें", bands:[]},
+    {title:"Boldfit विंटर पफ़र जैकेट (पुरुष)", desc:"हुडी वाली स्टाइलिश पफ़र जैकेट, सर्दियों के लिए। साइज़: S से 2XL।", url:"https://link.amazon/B0aI3efPz", emoji:"🧥", embed:"", img:"boldfit-jacket.jpg", price:"₹1,299", mrp:"₹3,499", off:"-63%", btn:"Amazon पर देखें", bands:[4,5,6,7,8,9]},
+  ]
+};
+
+/* =========================================================
+   डेटा: जीवन के 9 चरण
+========================================================= */
+const BANDS = [
+{id:1,from:5,to:10,title:"नींव का समय",emoji:"🎒",color:"#f59e0b",
+ summary:"स्कूल की शुरुआत: पढ़ना, सीखना, जिज्ञासा और अच्छी आदतें।",
+ todo:["पढ़ना-लिखना और गिनती की पक्की नींव बनाइए","रोज़ कहानी की किताब पढ़ने/सुनने की आदत डालिए","खेलकूद, ड्राइंग, संगीत में से जो पसंद हो उसे समय दीजिए","'क्यों?' और 'कैसे?' पूछने को बढ़ावा दीजिए","समय पर सोना, सही खाना और मोबाइल का सीमित इस्तेमाल"],
+ paths:[
+  {label:"पढ़ाई में मन लगता है",tips:["सवाल हल करने की जगह समझने पर ज़ोर दें","साधारण पहेलियाँ और गणित के खेल खिलाएँ","अतिरिक्त किताबें पढ़ने दें"]},
+  {label:"खेल/कला पसंद है",tips:["उसे नियमित प्रैक्टिस का मौका दें","पढ़ाई के साथ संतुलन बनाए रखें","स्कूल/मोहल्ले की प्रतियोगिताओं में भेजें"]},
+  {label:"पढ़ाई में कमज़ोर है",tips:["तुलना बिल्कुल न करें","पहले पता करें: नज़र, सुनना या ध्यान की कोई दिक्कत तो नहीं","रोज़ 20 मिनट आसान अभ्यास, छोटी जीत की तारीफ़ करें"]}],
+ money:["गुल्लक से बचत की आदत सिखाइए","पैसा कैसे आता है, यह कहानी से समझाइए","ज़रूरत और चाहत का फ़र्क बताइए"],
+ skills:["सही तरीके से पेंसिल पकड़ना, साफ़ लिखावट","मातृभाषा और अंग्रेज़ी की बुनियादी समझ","टीम में खेलना, बाँटना, माफ़ी माँगना"],
+ avoid:["बच्चे की दूसरों से तुलना","घंटों स्क्रीन टाइम","सिर्फ़ रटवाना, समझाना ज़रूरी है"]},
+
+{id:2,from:11,to:14,title:"खोज का समय",emoji:"🔍",color:"#10b981",
+ summary:"कक्षा 6 से 9: रुचियाँ पहचानने और पढ़ने की सही तकनीक सीखने की उम्र।",
+ todo:["पढ़ाई का नियमित टाइम-टेबल बनाइए","गणित, विज्ञान, भाषा, तीनों की नींव मज़बूत कीजिए","अलग-अलग क्षेत्र आज़माइए: कोडिंग, कला, खेल, लेखन, बोलना","अपनी रुचि की सूची बनाइए (क्या करने में समय का पता नहीं चलता?)","अख़बार/किताबें पढ़ने की आदत डालें"],
+ paths:[
+  {label:"गणित-विज्ञान पसंद है",tips:["ओलंपियाड/टैलेंट सर्च परीक्षा आज़माइए","छोटे प्रयोग और प्रोजेक्ट बनाइए","बेसिक कोडिंग (Scratch/Python) शुरू करें"]},
+  {label:"भाषा/समाज/कला पसंद है",tips:["डायरी, ब्लॉग या कहानी लिखिए","वाद-विवाद और भाषण में हिस्सा लें","इतिहास, भूगोल को रोचक तरीके से पढ़ें"]},
+  {label:"अभी कुछ समझ नहीं आ रहा",tips:["घबराइए नहीं, यह बिल्कुल सामान्य है","हर महीने एक नया शौक आज़माइए","अलग-अलग पेशे के लोगों से बात करें"]}],
+ money:["जेबखर्च का हिसाब रखना सीखें","बचत का छोटा लक्ष्य बनाएँ (जैसे साइकिल/किताब)","ऑनलाइन ठगी से सावधान रहना सीखें"],
+ skills:["टाइपिंग और बेसिक कंप्यूटर","समय प्रबंधन","आत्मविश्वास से अपनी बात रखना"],
+ avoid:["गेमिंग/सोशल मीडिया की लत","बुरी संगत और दबाव में आना","सिर्फ़ परीक्षा के दिन पढ़ना"]},
+
+{id:3,from:15,to:17,title:"दिशा चुनने का समय",emoji:"🧭",color:"#3b82f6",
+ summary:"कक्षा 10 से 12: स्ट्रीम और करियर की दिशा तय करने का सबसे अहम मोड़।",
+ todo:["रुचि + क्षमता + अवसर, तीनों मिलाकर स्ट्रीम चुनिए","बोर्ड परीक्षा की मज़बूत तैयारी कीजिए","करियर काउंसलिंग/एप्टीट्यूड टेस्ट दीजिए","प्रवेश परीक्षाओं की जानकारी अभी से जुटाइए","एक नई स्किल शुरू कीजिए (कंप्यूटर, अंग्रेज़ी, कम्युनिकेशन)"],
+ paths:[
+  {label:"Science लिया",tips:["इंजीनियरिंग (JEE), मेडिकल (NEET), रिसर्च (CUET/IISER), डिफेंस (NDA) में से चुनिए","Plan B ज़रूर रखिए (BSc, फार्मा, डेटा साइंस)","कोचिंग से पहले NCERT पक्की कीजिए"]},
+  {label:"Commerce लिया",tips:["CA/CS/CMA, BBA/BCom, फाइनेंस, बैंकिंग के रास्ते देखिए","Excel और अकाउंटिंग सॉफ़्टवेयर सीखिए","CUET की तैयारी साथ-साथ करें"]},
+  {label:"Arts/Humanities लिया",tips:["UPSC/SSC, लॉ (CLAT), पत्रकारिता, डिज़ाइन, टीचिंग के रास्ते खुले हैं","अंग्रेज़ी और लेखन पर पकड़ बनाइए","समसामयिक घटनाओं पर नज़र रखें"]},
+  {label:"Skill/ITI/Diploma चुना",tips:["अच्छे संस्थान और सर्टिफ़िकेट वाला कोर्स चुनिए","अप्रेंटिसशिप से कमाई के साथ सीखिए","आगे डिग्री का रास्ता भी खुला रखें"]}],
+ money:["बैंक खाता और UPI सुरक्षित तरीके से चलाना सीखें","छात्रवृत्ति (Scholarship) की जानकारी जुटाइए","आगे की पढ़ाई का अनुमानित खर्च परिवार से समझिए"],
+ skills:["कम्युनिकेशन और अंग्रेज़ी","बेसिक कंप्यूटर/Excel/AI टूल्स","तनाव संभालना और रिज़ल्ट का दबाव झेलना"],
+ avoid:["दोस्तों की देखा-देखी स्ट्रीम चुनना","सिर्फ़ 'सबसे ज़्यादा पैसे' के नाम पर चुनाव","रिज़ल्ट से निराश होकर हिम्मत हारना, रास्ते और भी हैं"]},
+
+{id:4,from:18,to:22,title:"निर्माण का समय",emoji:"🎓",color:"#8b5cf6",
+ summary:"कॉलेज/प्रोफेशनल कोर्स: डिग्री के साथ असली स्किल और अनुभव जोड़ने की उम्र।",
+ todo:["डिग्री के साथ कम से कम 2 डिमांड वाली स्किल सीखिए","इंटर्नशिप और छोटे प्रोजेक्ट ज़रूर कीजिए","LinkedIn प्रोफ़ाइल और अच्छा रिज़्यूमे बनाइए","नेटवर्किंग: सीनियर्स और प्रोफेशनल्स से जुड़िए","आख़िरी साल से पहले तय करें: नौकरी, सरकारी, बिज़नेस या उच्च शिक्षा"],
+ paths:[
+  {label:"प्रोफेशनल डिग्री (B.Tech/MBBS/CA आदि)",tips:["कैंपस प्लेसमेंट के लिए ऐप्टीट्यूड और कोडिंग/इंटरव्यू तैयारी","इंटर्नशिप से इंडस्ट्री समझिए","GATE/CAT/GRE जैसे विकल्प खुले रखें"]},
+  {label:"सामान्य डिग्री (BA/BSc/BCom)",tips:["डिग्री के साथ स्किल कोर्स जोड़ें: डिजिटल मार्केटिंग, Tally, कोडिंग, भाषा","सरकारी परीक्षा की तैयारी साथ-साथ शुरू करें","पार्ट-टाइम काम/इंटर्नशिप से अनुभव लें"]},
+  {label:"पढ़ाई छोड़ी / ब्रेक लिया",tips:["ओपन यूनिवर्सिटी/NIOS से पढ़ाई जारी रखी जा सकती है","स्किल कोर्स + अप्रेंटिसशिप से शुरुआत करें","खुद को दोष न दें, अब आगे की योजना बनाएँ"]},
+  {label:"काम के साथ पढ़ाई कर रहा/रही हूँ",tips:["आपका अनुभव बड़ी ताक़त है, इसे रिज़्यूमे में दिखाएँ","समय बँटवारा सख़्ती से कीजिए","सेहत और नींद की अनदेखी न करें"]}],
+ money:["एजुकेशन लोन सोच-समझकर लें, EMI का हिसाब पहले करें","पार्ट-टाइम/फ्रीलांस से पहली कमाई शुरू करें","क्रेडिट कार्ड और 'Buy Now Pay Later' से दूर रहें","छोटी SIP ₹500 से भी शुरू हो सकती है"],
+ skills:["कम्युनिकेशन, प्रेज़ेंटेशन, इंटरव्यू स्किल","AI टूल्स और डेटा की बेसिक समझ","टीमवर्क और लीडरशिप"],
+ avoid:["सिर्फ़ डिग्री लेकर स्किल न सीखना","नशा और बुरी लतें","फ़र्ज़ी नौकरी ऑफ़र और स्कैम में फँसना"]},
+
+{id:5,from:23,to:30,title:"शुरुआत और उड़ान",emoji:"🚀",color:"#ec4899",
+ summary:"पहली नौकरी/बिज़नेस, कमाई की शुरुआत, पहली बचत और तेज़ सीखने के साल।",
+ todo:["पहली 2-3 साल सीखने पर फ़ोकस, सिर्फ़ सैलरी पर नहीं","इमरजेंसी फंड बनाइए (3-6 महीने का खर्च)","SIP/निवेश की आदत शुरू कीजिए","टर्म इंश्योरेंस और हेल्थ इंश्योरेंस लीजिए","एक मेंटर ढूँढिए, हर साल स्किल अपग्रेड कीजिए"],
+ paths:[
+  {label:"नौकरी में हूँ",tips:["हर साल एक नई स्किल/सर्टिफ़िकेशन जोड़ें","अपने काम का रिकॉर्ड रखें, प्रमोशन/हाइक में काम आएगा","सैलरी का कम से कम 20% बचत/निवेश में डालें"]},
+  {label:"सरकारी परीक्षा की तैयारी",tips:["सिलेबस और टाइमलाइन के साथ रोज़ का टारगेट रखें","Plan B स्किल ज़रूर रखें","तैयारी की अवधि पहले से तय करें (जैसे 2 साल)"]},
+  {label:"बिज़नेस/फ्रीलांस शुरू किया",tips:["छोटे स्तर से टेस्ट कीजिए, पहले ग्राहक बनाइए","निजी और बिज़नेस खाते अलग रखें","कम से कम 6-12 महीने का खर्च बैकअप रखें"]},
+  {label:"अभी नौकरी/काम नहीं है",tips:["हर दिन 2-3 घंटे स्किल सीखने और आवेदन में लगाइए","फ्रीलांस/पार्ट-टाइम से शुरुआत करें","नेटवर्क में लोगों को अपनी स्थिति बताइए, मदद मिलती है"]}],
+ money:["50-30-20 नियम: 50% ज़रूरतें, 30% चाहतें, 20% बचत","इमरजेंसी फंड पहले, फिर निवेश","लंबे समय के लिए इंडेक्स फंड/SIP पर विचार","बिना ज़रूरत का कर्ज़ और महँगे गैजेट EMI से बचें"],
+ skills:["प्रोफेशनल कम्युनिकेशन और नेगोशिएशन","पर्सनल फाइनेंस की समझ","नियमित व्यायाम और नींद"],
+ avoid:["सिर्फ़ दिखावे के लिए खर्च","बार-बार बिना कारण नौकरी बदलना","निवेश में 'दोगुना पैसा' वाले वादों पर भरोसा"]},
+
+{id:6,from:31,to:40,title:"मज़बूती और ज़िम्मेदारी",emoji:"🏗️",color:"#14b8a6",
+ summary:"करियर की पकड़, परिवार, घर और बच्चों की पढ़ाई, सब संतुलित करने का दौर।",
+ todo:["करियर में अगला बड़ा कदम तय कीजिए: लीडरशिप, स्पेशलाइज़ेशन या बिज़नेस","निवेश का पोर्टफोलियो बनाइए और साल में एक बार समीक्षा कीजिए","बच्चों की पढ़ाई और परिवार के लिए अलग फंड बनाइए","माता-पिता की सेहत और बीमा का ध्यान रखिए","सालाना हेल्थ चेकअप शुरू कीजिए"],
+ paths:[
+  {label:"नौकरी में स्थिर",tips:["मैनेजर/स्पेशलिस्ट बनने की योजना बनाइए","साइड इनकम का एक छोटा स्रोत शुरू करें","अपने क्षेत्र के ट्रेंड्स (AI आदि) पर नज़र रखें"]},
+  {label:"बिज़नेस चला रहा/रही हूँ",tips:["सिस्टम और टीम बनाइए, सब कुछ खुद न करें","नकद-प्रवाह (cash flow) पर रोज़ नज़र रखें","अपनी बीमा और रिटायरमेंट बचत को बिज़नेस से अलग रखें"]},
+  {label:"करियर अटका महसूस हो रहा",tips:["अपनी स्किल की ईमानदार समीक्षा करें","क्षेत्र बदलना (Career switch) भी संभव है, 6-12 महीने की योजना बनाएँ","कोर्स + प्रोजेक्ट + नेटवर्क, तीनों साथ चलाइए"]}],
+ money:["घर खरीदने से पहले EMI आय के 40% से ज़्यादा न रखें","टर्म कवर वार्षिक आय का 10-15 गुना देखें (विशेषज्ञ से सलाह लें)","रिटायरमेंट के लिए अलग SIP/NPS शुरू करें","बच्चों की शिक्षा का लक्ष्य-आधारित निवेश"],
+ skills:["लीडरशिप और लोगों को संभालना","समय और ऊर्जा का संतुलन","मानसिक सेहत और तनाव प्रबंधन"],
+ avoid:["सेहत और परिवार को पीछे छोड़कर सिर्फ़ काम","दूसरों की देखा-देखी बड़ा कर्ज़","कमाई बढ़ने पर खर्च भी उसी अनुपात में बढ़ा लेना"]},
+
+{id:7,from:41,to:50,title:"शिखर और सुदृढ़ता",emoji:"⛰️",color:"#f97316",
+ summary:"कमाई का शिखर और बच्चों की उच्च शिक्षा। अब रिटायरमेंट की ठोस नींव रखने का समय।",
+ todo:["रिटायरमेंट की गणना कीजिए: कितना चाहिए, कितना बन रहा है","कर्ज़ घटाने की योजना बनाइए, खासकर महँगे लोन","स्किल अपडेट रखिए ताकि नौकरी/काम की प्रासंगिकता बनी रहे","बच्चों के करियर में मार्गदर्शन दीजिए, फ़ैसला उन्हें लेने दीजिए","फिटनेस की आदत बनाइए: रोज़ चलना, योग, सही खान-पान"],
+ paths:[
+  {label:"करियर ऊँचाई पर है",tips:["अगली पीढ़ी को मेंटर कीजिए","निवेश को विविध रखें: इक्विटी, डेट, सोना, रियल एस्टेट","वसीयत और नॉमिनी अपडेट कीजिए"]},
+  {label:"करियर में उतार/नौकरी का खतरा",tips:["इमरजेंसी फंड 9-12 महीने तक बढ़ाइए","फ्रीलांस/कंसल्टिंग का विकल्प तैयार करें","नई स्किल सीखना कभी देर नहीं होता"]},
+  {label:"बिज़नेस में हूँ",tips:["उत्तराधिकारी और सिस्टम की योजना बनाइए","एक ही ग्राहक/स्रोत पर निर्भरता घटाइए","निजी संपत्ति को सुरक्षित रखें"]}],
+ money:["रिटायरमेंट निवेश बढ़ाइए (आय का 20-30% तक अगर संभव)","हेल्थ इंश्योरेंस की राशि बढ़ाइए","अनावश्यक कर्ज़ चुकाइए","नियमित पोर्टफोलियो समीक्षा"],
+ skills:["डिजिटल/AI टूल्स का इस्तेमाल सीखते रहना","रिश्तों में समय और संवाद","स्वास्थ्य की निगरानी (BP, शुगर, कोलेस्ट्रॉल)"],
+ avoid:["बच्चों की शादी/पढ़ाई के नाम पर रिटायरमेंट बचत तोड़ना","सेहत की अनदेखी","जोखिम भरे निवेश में आख़िरी मौक़ा समझकर कूदना"]},
+
+{id:8,from:51,to:60,title:"योजना और सुरक्षा",emoji:"🛡️",color:"#0ea5e9",
+ summary:"रिटायरमेंट की तैयारी का अंतिम दशक: स्थिरता, सेहत और अगली पारी की योजना।",
+ todo:["रिटायरमेंट के बाद का मासिक खर्च और आय का हिसाब बनाइए","निवेश धीरे-धीरे सुरक्षित विकल्पों की ओर ले जाइए","घर/संपत्ति और वसीयत के कागज़ात ठीक रखिए","पार्ट-टाइम काम, कंसल्टिंग या शौक को करियर बनाने की योजना बनाइए","पूरा हेल्थ चेकअप हर साल कराइए"],
+ paths:[
+  {label:"नौकरी में हूँ",tips:["अपने अनुभव को कंसल्टिंग/ट्रेनिंग में बदलने की योजना बनाइए","PF, NPS, ग्रेच्युटी का हिसाब समझिए","रिटायरमेंट के बाद की दिनचर्या पहले से तय कीजिए"]},
+  {label:"बिज़नेस में हूँ",tips:["कारोबार धीरे-धीरे दूसरों को सौंपना शुरू करें","आय के वैकल्पिक स्रोत बनाइए (किराया, डिविडेंड आदि)","बीमा और क़ानूनी दस्तावेज़ अपडेट रखें"]},
+  {label:"बचत कम है",tips:["अब भी देर नहीं हुई, खर्च घटाकर बचत बढ़ाइए","रिटायरमेंट की उम्र कुछ साल आगे बढ़ाने पर विचार करें","विशेषज्ञ से योजना बनवाइए"]}],
+ money:["जोखिम धीरे-धीरे घटाइए (इक्विटी/डेट अनुपात की समीक्षा)","मेडिकल इमरजेंसी के लिए अलग फंड","पेंशन/एन्युटी विकल्पों की तुलना कीजिए","सीनियर सिटिज़न स्कीम्स की जानकारी रखिए"],
+ skills:["तकनीक के साथ चलना (UPI, ऑनलाइन सेवाएँ)","योग, ध्यान, संतुलित भोजन","नए शौक और सामाजिक जुड़ाव"],
+ avoid:["अपना पैसा बच्चों में बाँटकर खुद असुरक्षित हो जाना","सेहत संबंधी जाँच टालना","ऑनलाइन ठगी और फ़र्ज़ी कॉल से सावधान रहें"]},
+
+{id:9,from:61,to:65,title:"अनुभव और नई पारी",emoji:"🌅",color:"#a3e635",
+ summary:"रिटायरमेंट और अनुभव बाँटने का समय: सेहत, सुकून और सार्थक काम।",
+ todo:["रोज़ की दिनचर्या तय कीजिए: टहलना, योग, सामाजिक मेल-जोल","अपने अनुभव को मेंटरिंग, लेखन, ट्रेनिंग या सलाह के रूप में बाँटिए","खर्च और पेंशन/आय का मासिक हिसाब रखिए","नियमित चेकअप और दवाइयों का रिकॉर्ड रखिए","परिवार और दोस्तों के साथ समय बिताइए"],
+ paths:[
+  {label:"पूरी तरह रिटायर",tips:["एक रोज़ का मकसद रखिए, खाली न बैठें","समुदाय/समाज सेवा में जुड़िए","डिजिटल सुरक्षा सीखिए"]},
+  {label:"काम जारी रखना चाहता/चाहती हूँ",tips:["कम घंटों वाला सलाहकार/पार्ट-टाइम काम चुनिए","अपनी स्किल ऑनलाइन सिखाइए","ऊर्जा और सेहत के हिसाब से काम का दायरा तय करें"]},
+  {label:"नई शुरुआत करना चाहता/चाहती हूँ",tips:["शौक को छोटे स्तर पर आज़माइए","ऑनलाइन कोर्स/कम्युनिटी में जुड़िए","जोखिम सीमित रखें"]}],
+ money:["वसीयत और नॉमिनी स्पष्ट रखिए","निवेश से नियमित आय का तरीक़ा तय कीजिए","बड़े लेन-देन से पहले परिवार/विशेषज्ञ से सलाह","स्वास्थ्य बीमा नियमित चालू रखें"],
+ skills:["तकनीक का आत्मविश्वास","नियमित हल्का व्यायाम","याददाश्त और मन को सक्रिय रखने वाली गतिविधियाँ"],
+ avoid:["अकेलापन: लोगों से जुड़े रहिए","दवाइयों और जाँच में लापरवाही","बिना जाँचे किसी को पैसे देना"]}
+];
+
+/* कुछ ख़ास उम्र के लिए विशेष सुझाव */
+const AGE_NOTES = {
+ 5:"आज का फ़ोकस: खेल-खेल में अक्षर और गिनती, और रोज़ की अच्छी आदतें।",
+ 8:"आज का फ़ोकस: पढ़ने की आदत और एक पसंदीदा गतिविधि (ड्राइंग/खेल/संगीत)।",
+ 10:"आज का फ़ोकस: अपनी रुचियाँ पहचानना और आत्मविश्वास बढ़ाना।",
+ 12:"आज का फ़ोकस: पढ़ाई की तकनीक सीखना और स्क्रीन टाइम सीमित रखना।",
+ 14:"आज का फ़ोकस: 10वीं के बाद की स्ट्रीम के बारे में जानकारी जुटाना शुरू कीजिए।",
+ 15:"आज का फ़ोकस: कक्षा 10, बोर्ड की तैयारी और स्ट्रीम का सही चुनाव।",
+ 17:"आज का फ़ोकस: कक्षा 12, प्रवेश परीक्षा/कॉलेज की रणनीति और Plan B।",
+ 18:"आज का फ़ोकस: कॉलेज की शुरुआत, पहले साल से ही स्किल बनाना शुरू करें।",
+ 20:"आज का फ़ोकस: पहली इंटर्नशिप और प्रोजेक्ट, अनुभव जोड़ने का सही समय।",
+ 22:"आज का फ़ोकस: आख़िरी साल, नौकरी/सरकारी/बिज़नेस, रास्ता तय कीजिए।",
+ 25:"आज का फ़ोकस: करियर की नींव, इमरजेंसी फंड और SIP शुरू करने की सही उम्र।",
+ 28:"आज का फ़ोकस: मूल्यांकन कीजिए: क्या मैं सही दिशा में हूँ? ज़रूरी हो तो मोड़ लीजिए।",
+ 30:"आज का फ़ोकस: टर्म इंश्योरेंस, हेल्थ इंश्योरेंस और निवेश की योजना पक्की कीजिए।",
+ 35:"आज का फ़ोकस: करियर की अगली ऊँचाई और परिवार/सेहत में संतुलन।",
+ 40:"आज का फ़ोकस: रिटायरमेंट का हिसाब लगाइए, अब हर साल की बचत मायने रखती है।",
+ 45:"आज का फ़ोकस: कर्ज़ घटाइए, स्किल अपडेट रखिए, सेहत की निगरानी कीजिए।",
+ 50:"आज का फ़ोकस: रिटायरमेंट की अंतिम योजना और सेहत को प्राथमिकता।",
+ 55:"आज का फ़ोकस: निवेश की समीक्षा और रिटायरमेंट के बाद की दिनचर्या की तैयारी।",
+ 60:"आज का फ़ोकस: रिटायरमेंट की ओर, पेंशन, बीमा और नए मकसद की योजना।",
+ 65:"आज का फ़ोकस: सुकून, सेहत और अनुभव बाँटना, यह आपकी नई पारी है।"
+};
+
+const TABS = [
+ {k:"todo",  label:"✅ क्या करें"},
+ {k:"paths", label:"🔀 अगर आपने ये किया है"},
+ {k:"money", label:"💰 पैसा"},
+ {k:"skills",label:"🧠 स्किल व सेहत"},
+ {k:"avoid", label:"⚠️ क्या न करें"}
+];
+
+/* ग्राफ के लिए डेटा (0-100) */
+const GX = [5,10,15,18,22,25,30,40,50,60,65];
+const SERIES = [
+ {name:"सीखना",color:"#22d3ee",y:[70,85,95,95,90,80,70,60,50,45,40]},
+ {name:"कमाई",color:"#34d399",y:[0,0,0,5,25,45,65,85,95,90,70]},
+ {name:"बचत/निवेश",color:"#fbbf24",y:[0,0,2,5,15,35,55,75,90,95,95]},
+ {name:"ज़िम्मेदारी",color:"#f472b6",y:[5,10,15,25,40,60,85,95,90,75,60]}
+];
+
+/* =========================================================
+   कोड
+========================================================= */
+const $ = s => document.querySelector(s);
+let age = 5, tab = "todo", pathIdx = 0;
+const bandOf = a => BANDS.find(b => a >= b.from && a <= b.to);
+
+function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove("show"),2400)}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+/* सोशल लिंक */
+(function(){
+  const set=(id,url,label)=>{const a=$(id);
+    if(url){a.href=url}else{a.href="#";a.addEventListener("click",e=>{e.preventDefault();toast(label+" लिंक अभी जोड़ा नहीं गया")})}};
+  set("#igLink",CONFIG.instagram,"Instagram");
+  set("#ytLink",CONFIG.youtube,"YouTube");
+  $("#yr").textContent=new Date().getFullYear();
+})();
+
+
+/* 3D ring */
+(function(){
+  const ring=$("#ring"), n=BANDS.length, r=190;
+  BANDS.forEach((b,i)=>{
+    const f=document.createElement("div");f.className="face";
+    f.style.background=`linear-gradient(145deg,${b.color},#1b2250)`;
+    f.style.transform=`rotateY(${i*360/n}deg) translateZ(${r}px)`;
+    f.innerHTML=`<span class="e">${b.emoji}</span>${b.title}<small>${b.from}–${b.to} साल</small>`;
+    f.onclick=()=>{selectAge(b.from,true)};
+    ring.appendChild(f);
+  });
+})();
+
+/* age chips */
+(function(){
+  const bar=$("#agebar");
+  for(let a=5;a<=65;a++){
+    const c=document.createElement("button");c.className="chip";c.textContent=a;c.dataset.age=a;
+    c.setAttribute("aria-label",a+" साल");
+    c.onclick=()=>selectAge(a);
+    bar.appendChild(c);
+  }
+  const bl=$("#bandlabel");
+  BANDS.forEach(b=>{
+    const x=document.createElement("button");x.className="bl";x.dataset.id=b.id;
+    x.textContent=`${b.emoji} ${b.from}-${b.to}`;
+    x.onclick=()=>selectAge(b.from);
+    bl.appendChild(x);
+  });
+})();
+
+/* stage cards */
+(function(){
+  const c=$("#cards");
+  BANDS.forEach(b=>{
+    const d=document.createElement("div");d.className="glass scard";
+    d.style.borderTop=`3px solid ${b.color}`;
+    d.innerHTML=`<span class="age">${b.from}–${b.to}</span><span class="e">${b.emoji}</span><b>${b.title}</b><small>${esc(b.summary)}</small>`;
+    d.onclick=()=>selectAge(b.from,true);
+    d.addEventListener("mousemove",e=>{
+      const r=d.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      d.style.transform=`rotateY(${x*18}deg) rotateX(${-y*18}deg) translateZ(8px)`;
+    });
+    d.addEventListener("mouseleave",()=>d.style.transform="");
+    c.appendChild(d);
+  });
+})();
+
+/* main render */
+function selectAge(a,scroll){
+  age=Math.max(5,Math.min(65,a));
+  const b=bandOf(age);
+  if(b && (pathIdx>=b.paths.length)) pathIdx=0;
+  render();
+  if(scroll){$("#explorer").scrollIntoView({behavior:"smooth"})}
+}
+function render(){
+  const b=bandOf(age);
+  document.querySelectorAll(".chip").forEach(c=>{
+    const on=+c.dataset.age===age;c.classList.toggle("on",on);
+    if(on){c.scrollIntoView({inline:"center",block:"nearest",behavior:"smooth"})}
+  });
+  document.querySelectorAll(".bl").forEach(x=>x.classList.toggle("on",+x.dataset.id===b.id));
+  $("#pAge").textContent=age;
+  $("#pTitle").textContent=`${b.emoji} ${b.title}`;
+  $("#pSum").textContent=b.summary;
+  const note=$("#pNote");
+  if(AGE_NOTES[age]){note.style.display="block";note.textContent="💡 "+AGE_NOTES[age]}else note.style.display="none";
+  const tb=$("#tabs");tb.innerHTML="";
+  TABS.forEach(t=>{
+    const x=document.createElement("button");x.className="tab"+(t.k===tab?" on":"");x.textContent=t.label;
+    x.onclick=()=>{tab=t.k;render()};tb.appendChild(x);
+  });
+  const body=$("#tabbody");
+  let html="";
+  if(tab==="paths"){
+    html+=`<p class="sub">आपने जो रास्ता चुना है, उसे चुनिए:</p><div class="pathpick">`;
+    b.paths.forEach((p,i)=>{html+=`<button class="pp${i===pathIdx?" on":""}" data-i="${i}">${esc(p.label)}</button>`});
+    html+=`</div><ul class="list">`+b.paths[pathIdx].tips.map(t=>`<li>${esc(t)}</li>`).join("")+`</ul>`;
+  }else{
+    const arr=b[tab];
+    html=`<ul class="list${tab==="avoid"?" bad":""}">`+arr.map(t=>`<li>${esc(t)}</li>`).join("")+`</ul>`;
+  }
+  body.innerHTML=html;body.style.animation="none";void body.offsetWidth;body.style.animation="";
+  body.querySelectorAll(".pp").forEach(x=>x.onclick=()=>{pathIdx=+x.dataset.i;render()});
+  drawGraph();renderAff();
+}
+$("#prev").onclick=()=>selectAge(age-1);
+$("#next").onclick=()=>selectAge(age+1);
+document.addEventListener("keydown",e=>{
+  if(e.target.matches("input,textarea"))return;
+  if(e.key==="ArrowRight")selectAge(age+1);
+  if(e.key==="ArrowLeft")selectAge(age-1);
+});
+
+/* ---- graph ---- */
+const GW=900,GH=380,PL=50,PR=20,PT=20,PB=44;
+const xOf=a=>PL+(a-5)/60*(GW-PL-PR);
+const yOf=v=>PT+(100-v)/100*(GH-PT-PB);
+function interp(arr,a){
+  for(let i=0;i<GX.length-1;i++){
+    if(a>=GX[i]&&a<=GX[i+1]){const t=(a-GX[i])/(GX[i+1]-GX[i]);return arr[i]+(arr[i+1]-arr[i])*t}
+  }
+  return arr[arr.length-1];
+}
+function drawGraph(){
+  const svg=$("#graph");
+  let s=`<defs><linearGradient id="bgg" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff" stop-opacity=".12"/><stop offset="1" stop-color="#22d3ee" stop-opacity=".12"/></linearGradient></defs>
+  <rect x="${PL}" y="${PT}" width="${GW-PL-PR}" height="${GH-PT-PB}" rx="10" fill="url(#bgg)"/>`;
+  /* band backgrounds */
+  BANDS.forEach(b=>{
+    const x1=xOf(b.from),x2=xOf(b.to+1>65?65:b.to+1);
+    s+=`<rect x="${x1}" y="${PT}" width="${x2-x1}" height="${GH-PT-PB}" fill="${b.color}" opacity="${b.id===bandOf(age).id?.16:.04}"/>`;
+    s+=`<text x="${(x1+x2)/2}" y="${GH-PB+36}" font-size="15" text-anchor="middle">${b.emoji}</text>`;
+  });
+  for(let v=0;v<=100;v+=25){
+    s+=`<line x1="${PL}" x2="${GW-PR}" y1="${yOf(v)}" y2="${yOf(v)}" stroke="rgba(255,255,255,.1)"/>
+        <text x="${PL-8}" y="${yOf(v)+4}" font-size="11" fill="#a9b2d6" text-anchor="end">${v}</text>`;
+  }
+  for(let a=5;a<=65;a+=5){
+    s+=`<text x="${xOf(a)}" y="${GH-PB+16}" font-size="12" fill="#a9b2d6" text-anchor="middle">${a}</text>`;
+  }
+  SERIES.forEach(se=>{
+    let d="";for(let a=5;a<=65;a++){d+=(a===5?"M":"L")+xOf(a).toFixed(1)+","+yOf(interp(se.y,a)).toFixed(1)+" "}
+    s+=`<path d="${d}" fill="none" stroke="${se.color}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  });
+  const xa=xOf(age);
+  s+=`<line x1="${xa}" x2="${xa}" y1="${PT}" y2="${GH-PB}" stroke="#fff" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  SERIES.forEach(se=>{s+=`<circle cx="${xa}" cy="${yOf(interp(se.y,age))}" r="6" fill="${se.color}" stroke="#fff" stroke-width="2"/>`});
+  const lx=xa>GW-130?xa-70:xa+8;
+  s+=`<rect x="${lx-4}" y="${PT+4}" width="62" height="24" rx="12" fill="#7c5cff"/><text x="${lx+27}" y="${PT+21}" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">${age} साल</text>`;
+  s+=`<text x="${GW/2}" y="${GH-2}" font-size="11" fill="#a9b2d6" text-anchor="middle">उम्र (साल) →   |   Created by Rajan Jha</text>`;
+  svg.innerHTML=s;
+  $("#legend").innerHTML=SERIES.map(se=>`<span><i style="background:${se.color}"></i>${se.name}</span>`).join("");
+}
+$("#graph").addEventListener("click",e=>{
+  const svg=$("#graph"),r=svg.getBoundingClientRect();
+  const px=(e.clientX-r.left)/r.width*GW;
+  const a=Math.round(5+(px-PL)/(GW-PL-PR)*60);
+  selectAge(a);
+});
+
+/* ---- affiliate ---- */
+function renderAff(){
+  const b=bandOf(age),box=$("#aff");
+  const list=CONFIG.affiliates.filter(a=>!a.bands||!a.bands.length||a.bands.includes(b.id));
+  box.innerHTML=list.map(a=>`<div class="glass acard">${a.embed?`<div class="embed">${a.embed}</div>`:(a.img?`<img src="${esc(a.img)}" alt="${esc(a.title)}" loading="lazy" onerror="this.outerHTML='<div class=&quot;aimg&quot;>${a.emoji||"🛍️"}</div>'">`:`<div class="aimg">${a.emoji||"🛍️"}</div>`)}<span class="tag">Affiliate</span><h4>${esc(a.title)}</h4><p>${esc(a.desc)}</p>${(!a.embed&&a.price)?`<div class="price"><b>${esc(a.price)}</b>${a.mrp?` <s>${esc(a.mrp)}</s>`:""}${a.off?` <em>${esc(a.off)}</em>`:""}<small>कीमत बदल सकती है, Amazon पर जाँच लें</small></div>`:""}
+    ${a.url?`<a class="btn" href="${esc(a.url)}" target="_blank" rel="sponsored noopener">${esc(a.btn)}</a>`:`<button class="btn alt" onclick="toast('यहाँ अपना Affiliate लिंक जोड़ें')">${esc(a.btn)}</button>`}</div>`).join("");
+}
+
+/* ---- downloads ---- */
+$("#dlGraph").onclick=()=>{
+  const svg=$("#graph").cloneNode(true);
+  svg.setAttribute("xmlns","http://www.w3.org/2000/svg");
+  svg.setAttribute("width",GW*2);svg.setAttribute("height",GH*2);
+  const bg=document.createElementNS("http://www.w3.org/2000/svg","rect");
+  bg.setAttribute("width",GW);bg.setAttribute("height",GH);bg.setAttribute("fill","#0b1020");
+  svg.insertBefore(bg,svg.firstChild);
+  svg.querySelectorAll("text").forEach(t=>{if(!t.getAttribute("fill"))t.setAttribute("fill","#ffffff")});
+  const data="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(new XMLSerializer().serializeToString(svg));
+  const img=new Image();
+  img.onload=()=>{
+    const c=document.createElement("canvas");c.width=GW*2;c.height=GH*2;
+    const ctx=c.getContext("2d");ctx.drawImage(img,0,0,c.width,c.height);
+    const a=document.createElement("a");a.download="life-career-graph-rajan-jha.png";a.href=c.toDataURL("image/png");a.click();
+    toast("ग्राफ डाउनलोड हो गया ✅");
+  };
+  img.onerror=()=>toast("डाउनलोड में दिक्कत आई, स्क्रीनशॉट ले लें");
+  img.src=data;
+};
+function buildPrint(){
+  let h=`<h1>जीवन करियर रोडमैप (5 से 65 साल)</h1><p>Creator by Rajan Jha · From Madhubani · Live in Delhi</p>`;
+  BANDS.forEach(b=>{
+    h+=`<div class="glass" style="padding:14px;margin:12px 0;page-break-inside:avoid"><h2>${b.emoji} ${b.from}–${b.to} साल: ${b.title}</h2><p>${esc(b.summary)}</p>`;
+    TABS.forEach(t=>{
+      if(t.k==="paths"){h+=`<h3>${t.label}</h3><ul>`+b.paths.map(p=>`<li><b>${esc(p.label)}:</b> ${p.tips.map(esc).join("; ")}</li>`).join("")+`</ul>`}
+      else{h+=`<h3>${t.label}</h3><ul>`+b[t.k].map(x=>`<li>${esc(x)}</li>`).join("")+`</ul>`}
+    });
+    h+=`</div>`;
+  });
+  $("#printAll").innerHTML=h;
+}
+$("#dlPdf").onclick=()=>{buildPrint();toast("Print विंडो में 'Save as PDF' चुनें");setTimeout(()=>window.print(),500)};
+
+/* ---- share ---- */
+$("#shareBtn").onclick=async()=>{
+  const url=CONFIG.siteUrl||location.href;
+  const data={title:"जीवन करियर रोडमैप",text:"उम्र दर उम्र करियर गाइड: 5 से 65 साल तक",url};
+  try{ if(navigator.share){await navigator.share(data)} else {await navigator.clipboard.writeText(url);toast("लिंक कॉपी हो गया ✅")} }catch(e){}
+};
+
+/* ---- install (PWA) ---- */
+let deferred=null;
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferred=e});
+window.addEventListener("appinstalled",()=>toast("इंस्टॉल हो गया 🎉"));
+$("#installBtn").onclick=async()=>{
+  if(deferred){deferred.prompt();await deferred.userChoice;deferred=null}
+  else $("#modal").classList.add("show");
+};
+$("#closeModal").onclick=()=>$("#modal").classList.remove("show");
+$("#modal").addEventListener("click",e=>{if(e.target.id==="modal")$("#modal").classList.remove("show")});
+$("#saveHtml").onclick=()=>{
+  const blob=new Blob(["<!DOCTYPE html>\n"+document.documentElement.outerHTML],{type:"text/html"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="life-career-roadmap.html";a.click();
+  toast("फाइल सेव हो गई ✅");
+};
+/* इनलाइन manifest (सिर्फ़ https वेबसाइट पर काम करेगा) */
+(function(){
+  try{
+    const icon="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="110" fill="#7c5cff"/><text x="256" y="340" font-size="280" text-anchor="middle">🧭</text></svg>');
+    const m={name:"Life Career Roadmap",short_name:"Career Map",start_url:location.href.split("#")[0],display:"standalone",background_color:"#0b1020",theme_color:"#0b1020",lang:"hi",icons:[{src:icon,sizes:"any",type:"image/svg+xml",purpose:"any"}]};
+    const l=document.createElement("link");l.rel="manifest";
+    l.href=URL.createObjectURL(new Blob([JSON.stringify(m)],{type:"application/manifest+json"}));
+    document.head.appendChild(l);
+  }catch(e){}
+})();
+
+/* स्क्रॉल प्रोग्रेस बार */
+window.addEventListener("scroll",()=>{
+  const h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight||1)*100;
+  $("#progress").style.width=p+"%";
+},{passive:true});
+
+render();
+</script>
+</body>
+</html>
